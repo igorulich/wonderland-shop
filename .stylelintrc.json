@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-standard-scss",
   "rules": {
+    "selector-id-pattern": "^[a-z]+(?:[A-Z][a-z]+)*$",
     "scss/dollar-variable-pattern": null,
     "color-no-invalid-hex": true,
     "number-max-precision": [
