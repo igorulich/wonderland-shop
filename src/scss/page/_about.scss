@@ -1,7 +1,13 @@
 section.about {
   @include relative;
 
-  padding-top: 8%;
+  padding-top: 12%;
+}
+
+@media screen and (width<=768px) {
+  section.about {
+    padding-top: 14%;
+  }
 }
 
 .about-title h2 {
@@ -31,6 +37,13 @@ img.about-title-fon {
   flex-direction: row;
 }
 
+@media screen and (width<=768px) {
+  .about-information {
+    flex-direction: column-reverse;
+
+  }
+}
+
 .about-descr {
   @include relative;
 
@@ -39,6 +52,12 @@ img.about-title-fon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (width<=768px) {
+  .about-descr {
+    width: 100%;
+  }
 }
 
 .about-descr h3 {
@@ -67,29 +86,49 @@ img.about-title-fon {
   background-position: 44.58715596330275% 43.177570093457945%;
 }
 
-.about-descr-paragraf{
+@media screen and (width<=768px) {
+  .about-descr::after {
+    top: -5%;
+    left: -5%;
+  }
+}
+
+.about-descr-paragraf {
   @include relative;
 }
 
-.about-descr-paragraf p{
+.about-descr-paragraf p {
   font-family: Roboto, sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    font-size: calc(12px + 10 * (100vw / 1920));
-    line-height: calc(18px + 1.635417vh);
-    letter-spacing: 0.01em;
-    color: $Mercury;
-  padding: 1% 0 ;
+  font-style: italic;
+  font-weight: 200;
+  font-size: calc(12px + 10 * (100vw / 1920));
+  line-height: calc(18px + 1.635417vh);
+  letter-spacing: 0.01em;
+  color: $Mercury;
+  padding: 1% 0;
 }
 
-.about-images{
-  padding: 1%;
+.about-images {
+  padding: 0;
 }
 
-.about-images img{
+@media screen and (width<=768px) {
+  .about-images {
+  padding-bottom: 5%;
+  margin: 0 auto;
+  }
+}
+
+.about-images img {
   width: 100%;
   max-width: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (width<=768px){
+  .about-images img{
+    max-width: 500px;
+  }
 }

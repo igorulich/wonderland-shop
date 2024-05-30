@@ -216,3 +216,9 @@ img.header-poster {
   width: 100%;
   z-index: z('poster');
 }
+
+@media screen and (width<=992px){
+  img.header-poster{
+    height: 620px;
+  }
+}
