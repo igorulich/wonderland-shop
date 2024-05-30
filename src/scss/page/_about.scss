@@ -1,0 +1,95 @@
+section.about {
+  @include relative;
+
+  padding-top: 8%;
+}
+
+.about-title h2 {
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(11px + 28 * (100vw / 1920));
+  line-height: calc(18px + 4.135417vh);
+  text-transform: uppercase;
+  color: $Saffron;
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+img.about-title-fon {
+  @include relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-information {
+  @include relative;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.about-descr {
+  @include relative;
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-descr h3 {
+  @include relative;
+
+  font-family: OpenSans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + 14 * (100vw / 1920));
+  line-height: calc(18px + 1.635417vh);
+  letter-spacing: 0.01em;
+  color: $Marigold-Yellowt;
+}
+
+.about-descr::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 91px;
+  height: 45px;
+
+  @extend %svg-common;
+
+  background-position: 44.58715596330275% 43.177570093457945%;
+}
+
+.about-descr-paragraf{
+  @include relative;
+}
+
+.about-descr-paragraf p{
+  font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: calc(12px + 10 * (100vw / 1920));
+    line-height: calc(18px + 1.635417vh);
+    letter-spacing: 0.01em;
+    color: $Mercury;
+  padding: 1% 0 ;
+}
+
+.about-images{
+  padding: 1%;
+}
+
+.about-images img{
+  width: 100%;
+  max-width: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -112,7 +112,24 @@ span.navbar-toggler-icon::before {
 
   display: flex;
   flex-direction: column;
+}
 
+.header-content-soc-icons {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 33px;
+  height: 99px;
+  z-index: z('content');
+}
+
+.whatsapp,
+.facebook,
+.instagram {
+  width: 33px;
+  height: 33px;
+  z-index: z('content');
+  cursor: pointer;
 }
 
 .header-content-title h1 {
@@ -142,7 +159,7 @@ span.navbar-toggler-icon::before {
   color: $Marigold-Yellowt;
   text-align: right;
   padding-bottom: 3%;
-z-index: z('content');
+  z-index: z('content');
 }
 
 .header-content-btn {
@@ -186,13 +203,16 @@ z-index: z('content');
   z-index: z('content');
 }
 
-img.header-poster{
+img.header-poster {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   max-width: 1920px;
   height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   z-index: z('poster');
 }
