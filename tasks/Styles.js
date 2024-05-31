@@ -1,6 +1,6 @@
 "use strict";
 const { src, dest } = require("gulp");
-const config = require("../../paths.js");
+const config = require("../paths.js");
 const autoprefixer = require("autoprefixer");
 var rename = require("gulp-rename");
 var sourcemaps = require("gulp-sourcemaps");

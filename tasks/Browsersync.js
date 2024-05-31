@@ -1,6 +1,6 @@
 "use strict";
 const { watch } = require("gulp");
-const config = require("../../paths.js");
+const config = require("../paths.js");
 const  {Styles } = require("./Styles.js");
 const { Scripts } = require("./Scripts.js");
 const { Html } = require("./Html.js");

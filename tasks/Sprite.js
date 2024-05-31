@@ -1,6 +1,6 @@
 "use strict";
 const { src, dest } = require("gulp");
-const config = require("../../paths.js");
+const config = require("../paths.js");
 const svgSprite = require("gulp-svg-sprite");
 
 function Sprite(cb) {

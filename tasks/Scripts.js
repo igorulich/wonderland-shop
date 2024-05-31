@@ -2,7 +2,7 @@
 const { src, dest } = require("gulp");
 const babel = require('gulp-babel');
 var concat = require('gulp-concat');
-const config = require("../../paths");
+const config = require("../paths");
 var rename = require("gulp-rename");
 var sourcemaps = require("gulp-sourcemaps");
 var plumber = require("gulp-plumber");

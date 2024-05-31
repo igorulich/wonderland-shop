@@ -1,6 +1,6 @@
 "use strict";
 const { src, dest } = require("gulp");
-const config = require("../../paths.js");
+const config = require("../paths.js");
 const fileinclude = require("gulp-file-include");
 var browserSync = require('browser-sync').create();
 var rename = require("gulp-rename");

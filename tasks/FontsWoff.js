@@ -1,6 +1,6 @@
 "use strict";
 const { src, dest } = require("gulp");
-const config = require("../../paths.js");
+const config = require("../paths.js");
 var ttf2woff = require("gulp-ttf2woff");
 
 const FontsWoff = (cb) => {
