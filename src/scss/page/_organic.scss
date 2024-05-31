@@ -40,6 +40,16 @@ img.organic-title-fon {
   grid-template-rows: repeat(3, 27vmin);
 }
 
+@media screen and (width<=425px) {
+  .organic-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+   
+  }
+}
+
 .organic-item {
   @include relative;
 
