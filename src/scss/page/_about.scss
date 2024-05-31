@@ -10,6 +10,22 @@ section.about {
   }
 }
 
+.about-content{
+  @include relative;
+}
+
+.about-content::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  content: '';
+  height: 1px;
+  width: 65%;
+  background-color: $Shiraz;
+  opacity: 0.6;
+}
+
 .about-title h2 {
   font-family: segoescript, sans-serif;
   font-style: normal;

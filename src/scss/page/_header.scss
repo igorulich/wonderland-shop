@@ -123,6 +123,12 @@ span.navbar-toggler-icon::before {
   z-index: z('content');
 }
 
+@media screen and (width<=992px){
+  .header-content-soc-icons{
+    top: 45%;
+  }
+}
+
 .whatsapp,
 .facebook,
 .instagram {
