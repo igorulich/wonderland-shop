@@ -1,0 +1,100 @@
+section.carousel {
+  @include relative;
+
+  padding-bottom: 4%;
+}
+
+img.bestsellers-title-fon {
+  @include relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60px;
+}
+
+.bestsellers-title h2 {
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(11px + 28 * (100vw / 1920));
+  line-height: calc(18px + 4.135417vh);
+  text-transform: uppercase;
+  color: $Saffron;
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+.bestsellers-content {
+  @include relative;
+
+  padding-top: 8%;
+  background-color: $Cod-Gray
+}
+
+.bestsellers {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.card {
+  padding: 0 12px;
+  background: transparent;
+}
+
+h5.card-title {
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + 10 * (100vw / 1920));
+  line-height: calc(16px + 1.635417vh);
+  letter-spacing: 0.01em;
+  color: $Saffron;
+}
+
+.card-body {
+  @include relative;
+
+  min-height: 160px;
+}
+
+p.card-text {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: calc(12px + 10 * (100vw / 1920));
+  line-height: calc(18px + 1.635417vh);
+  letter-spacing: 0.01em;
+  color: $Mercury;
+ 
+}
+
+a.btn.btn-danger {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  font-family: OpenSans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + 10 * (100vw / 1920));
+  line-height: calc(16px + 0.635417vh);
+  color: $Mercury;
+  border-radius: 17px;
+}
+
+span.span-danger{
+  position: absolute;
+  bottom: 0;
+  left: 16%;
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(10px + 10 * (100vw / 1920));
+  line-height: calc(16px + 1.635417vh);
+  color: $Saffron;
+}
