@@ -33,6 +33,7 @@ section.assortiment {
 .assortiment-content {
   @include relative;
 
+
 }
 
 .assortiment-grid {
@@ -44,19 +45,28 @@ section.assortiment {
   grid-gap: 6px;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(2, 27vmin);
-    padding-bottom: 3%;
+  padding-bottom: 7%;
+}
+
+@media screen and (width<=992px){
+.assortiment-grid{
+  padding-bottom: 9%;
+}
+}
+
+@media screen and (width<=425px){
+.assortiment-grid{
+  padding-bottom: 24%;
+}
 }
 
 .assortiment-item {
   @include relative;
 
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .assortiment-item img {
@@ -101,4 +111,49 @@ section.assortiment {
   grid-column: 3;
   grid-row: 2;
 
+}
+
+
+.assortiment-content-linck{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  place-content: center space-around;
+  align-items: center;
+ 
+}
+
+.assortiment-content-linck p{
+ @include relative;
+
+  font-family: OpenSans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+font-size: calc(10px + 6 * (100vw / 1920));
+line-height: calc(11px + 1.135417vh);
+  color: $Mercury;
+  text-align: center;
+}
+
+@media screen and (width<=425px) {
+.assortiment-content-linck p{
+  line-height: calc(11px + 0.135417vh);
+}
+}
+
+.assortiment-content-btn button{
+  @include relative;
+
+  font-family: OpenSans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $Mercury;
+    max-width: 240px;
+    height: 45px;
+    background: $Shiraz;
+    border: 1px solid $Shiraz;
+    box-shadow: 0 20px 50px -10px rgb(173 16 45 / 40%);
+    border-radius: 50px;
+white-space: nowrap;
 }

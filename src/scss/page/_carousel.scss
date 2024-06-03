@@ -102,7 +102,7 @@ margin: 1% 0 10%;
 }
 
 p.card-text {
-  font-family: Roboto, sans-serif;
+  font-family: OpenSans, sans-serif;
   font-style: italic;
   font-weight: 200;
   font-size: calc(12px + 10 * (100vw / 1920));
@@ -124,8 +124,8 @@ a.btn.btn-danger {
   font-family: OpenSans, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: calc(10px + 10 * (100vw / 1920));
-  line-height: calc(16px + 0.635417vh);
+font-size: calc(10px + 6 * (100vw / 1920));
+  line-height: calc(11px + 1.135417vh);
   color: $Mercury;
   border-radius: 17px;
 }
