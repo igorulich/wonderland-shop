@@ -28,17 +28,40 @@ img.bestsellers-title-fon {
 .bestsellers-content {
   @include relative;
 
-  padding-top: 8%;
+  padding: 2% 0 3%;
   background-color: $Cod-Gray
 }
 
-.bestsellers {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
+.bestsellers.slick-initialized.slick-slider{
+@include relative;
+    display: flex;
+    align-items: center;
+  
 }
 
+.slick-prev.bestsellers-prev.slick-arrow {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  @extend %svg-common;
+  background-position: 6.7114093959731544% 7.407407407407407%;
+  border: none;
+}
+
+.slick-next.bestsellers-next.slick-arrow {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  @extend %svg-common;
+  background-position: 0 0;
+  border: none;
+}
+.card.slick-slide.slick-active{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 340px;
+}
 .card {
   padding: 0 12px;
   background: transparent;
@@ -56,8 +79,8 @@ h5.card-title {
 
 .card-body {
   @include relative;
+margin: 1% 0 10%;
 
-  min-height: 160px;
 }
 
 p.card-text {
@@ -65,9 +88,11 @@ p.card-text {
   font-style: italic;
   font-weight: 200;
   font-size: calc(12px + 10 * (100vw / 1920));
-  line-height: calc(18px + 1.635417vh);
+  line-height: calc(12px + 1.635417vh);
   letter-spacing: 0.01em;
   color: $Mercury;
+ min-height: 130px;
+
  
 }
 
@@ -87,7 +112,7 @@ a.btn.btn-danger {
   border-radius: 17px;
 }
 
-span.span-danger{
+span.span-danger {
   position: absolute;
   bottom: 0;
   left: 16%;
