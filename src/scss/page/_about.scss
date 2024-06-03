@@ -40,10 +40,13 @@ section.about {
 
 img.about-title-fon {
   @include relative;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 45%;
+    left: 25%;
 }
 
 .about-information {

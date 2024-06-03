@@ -6,11 +6,13 @@ section.carousel {
 
 img.bestsellers-title-fon {
   @include relative;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 45%;
+    left: 25%;
 }
 
 .bestsellers-title h2 {
@@ -34,6 +36,7 @@ img.bestsellers-title-fon {
 
 .bestsellers.slick-initialized.slick-slider{
 @include relative;
+
     display: flex;
     align-items: center;
   
@@ -43,7 +46,9 @@ img.bestsellers-title-fon {
   max-width: 40px;
   width: 100%;
   height: 40px;
+
   @extend %svg-common;
+
   background-position: 6.7114093959731544% 7.407407407407407%;
   border: none;
 }
@@ -56,7 +61,9 @@ img.bestsellers-title-fon {
   max-width: 40px;
   width: 100%;
   height: 40px;
+
   @extend %svg-common;
+
   background-position: 0 0;
   border: none;
 }
@@ -71,6 +78,7 @@ img.bestsellers-title-fon {
   justify-content: space-between;
   max-height: 340px;
 }
+
 .card {
   padding: 0 12px;
   background: transparent;
@@ -88,6 +96,7 @@ h5.card-title {
 
 .card-body {
   @include relative;
+
 margin: 1% 0 10%;
 
 }
