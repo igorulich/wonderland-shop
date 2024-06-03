@@ -48,6 +48,10 @@ img.bestsellers-title-fon {
   border: none;
 }
 
+.slick-prev.bestsellers-prev.slick-arrow.slick-disabled{
+  opacity: 0;
+}
+
 .slick-next.bestsellers-next.slick-arrow {
   max-width: 40px;
   width: 100%;
@@ -56,6 +60,11 @@ img.bestsellers-title-fon {
   background-position: 0 0;
   border: none;
 }
+
+.slick-next.bestsellers-next.slick-arrow.slick-disabled{
+ opacity: 0;
+}
+
 .card.slick-slide.slick-active{
   display: flex;
   align-items: center;
