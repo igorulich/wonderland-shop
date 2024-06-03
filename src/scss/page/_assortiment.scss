@@ -1,6 +1,10 @@
 section.assortiment {
   @include relative;
 
+  background-image: url("../images/group.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .assortiment-title img {
@@ -46,6 +50,7 @@ section.assortiment {
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(2, 27vmin);
   padding-bottom: 7%;
+ 
 }
 
 @media screen and (width<=992px){
