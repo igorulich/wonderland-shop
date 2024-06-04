@@ -7,7 +7,7 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev bestsellers-prev"></button>',
-    nextArrow:'<button type="button" class="slick-next bestsellers-next">Next</button>',
+    nextArrow:'<button type="button" class="slick-next bestsellers-next"></button>',
     responsive: [
       {
         breakpoint: 1024,
@@ -36,7 +36,34 @@ $(function () {
   });
 });
 
-
-
+$(function () {
+  $('.gallery').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev gallery-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next gallery-next"></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
 
 

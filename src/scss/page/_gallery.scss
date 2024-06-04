@@ -1,0 +1,89 @@
+section.gallery {
+  padding-top: 40%;
+
+  @include relative;
+}
+
+.gallery-title h2 {
+  @include relative;
+
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(11px + 28 * (100vw / 1920));
+  line-height: calc(18px + 4.135417vh);
+  text-transform: uppercase;
+  color: $Saffron;
+  text-align: center;
+}
+
+.gallery-content {
+  @include relative;
+
+  padding: 2% 0 3%;
+  background-color: $Cod-Gray;
+}
+
+.gallery.slick-initialized.slick-slider {
+  @include relative;
+
+  width: 100%;
+   display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.slick-prev.gallery-prev.slick-arrow {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+
+  @extend %svg-common;
+
+  background-position: 6.7114093959731544% 7.407407407407407%;
+  border: none;
+}
+
+.slick-prev.gallery-prev.slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slick-next.gallery-next.slick-arrow {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+
+  @extend %svg-common;
+
+  background-position: 0 0;
+  border: none;
+}
+
+.slick-next.gallery-next.slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.gallery-images.slick-slide.slick-active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 340px;
+}
+
+.gallery-images {
+  @include relative;
+
+  max-width: 260px;
+    min-height: 320px;
+
+}
+
+img.images-gallery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 1% 3%;
+}
