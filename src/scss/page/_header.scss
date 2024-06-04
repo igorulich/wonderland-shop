@@ -36,6 +36,8 @@ li.nav-item {
   display: flex;
   align-items: center;
   place-content: center center;
+  
+ 
 }
 
 @media screen and (width<=992px) {
@@ -60,6 +62,12 @@ li.nav-item {
   text-transform: uppercase;
   display: flex;
   flex-wrap: wrap;
+  border-top: solid 3px transparent;
+  transition: all 0.6s linear;
+}
+
+#navbarText>ul>li>a:hover{
+border-top: solid 3px $Saffron;
 }
 
 @media screen and (width<=992px) {

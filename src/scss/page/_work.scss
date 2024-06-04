@@ -1,0 +1,60 @@
+section.work {
+  @include relative;
+
+  padding-top: 6%;
+}
+
+.work-title h2 {
+  @include relative;
+
+  font-family: segoescript, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(11px + 28 * (100vw / 1920));
+  line-height: calc(18px + 4.135417vh);
+  text-transform: uppercase;
+  color: $Saffron;
+  text-align: center;
+  padding-bottom: 6%;
+}
+
+img.work-title-fon {
+  @include relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 45%;
+  left: 25%;
+}
+
+.work-content {
+  @include relative;
+
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3%;
+
+}
+
+.work-item:nth-child(2n+1) {
+  margin-bottom: 40px;
+}
+
+.work-item:nth-child(2n) {
+  margin-top: 40px;
+}
+
+.work-item {
+  width: 41%;
+  min-height: 234px;
+  height: 100%;
+  box-shadow: 5px 5px 27px 13px rgb(0 0 0 / 99%);
+  box-shadow: 5px 5px 27px 13px rgb(0 0 0 / 99%);
+  border: solid 1px black;
+}
