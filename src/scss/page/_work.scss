@@ -42,19 +42,19 @@ img.work-title-fon {
 
 }
 
-@media screen and (width<=768px){
+@media screen and (width<=768px) {
   .work {
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media screen and (width<=425px){
+@media screen and (width<=425px) {
   .work {
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -66,15 +66,15 @@ img.work-title-fon {
   margin-top: 40px;
 }
 
-@media screen and (width<=768px){
+@media screen and (width<=768px) {
   .work-item:nth-child(2n) {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
-@media screen and (width<=425px){
-.work-item:nth-child(2n) {
+@media screen and (width<=425px) {
+  .work-item:nth-child(2n) {
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -83,7 +83,7 @@ img.work-title-fon {
 .work-item {
   @include relative;
 
-display: flex;
+  display: flex;
   width: 41%;
   min-height: 234px;
   height: 100%;
@@ -91,13 +91,13 @@ display: flex;
   border: solid 1px black;
 }
 
-@media screen and (width<=768px){
+@media screen and (width<=768px) {
   .work-item {
     width: 88%;
   }
 }
 
-@media screen and (width<=425px){
+@media screen and (width<=425px) {
   .work-item {
     width: 98%;
   }
@@ -114,32 +114,32 @@ display: flex;
   width: 35%;
   min-height: 234px;
   height: 100%;
-   background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  }
+}
 
-  .work-item-step-1{
+.work-item-step-1 {
   background-image: url("./../images/van.webp");
 }
 
-  .work-item-step-2{
+.work-item-step-2 {
   background-image: url("./../images/two.webp");
 }
 
-  .work-item-step-3{
+.work-item-step-3 {
   background-image: url("./../images/free.webp");
 }
 
-  .work-item-step-4{
+.work-item-step-4 {
   background-image: url("./../images/foo.webp");
 }
 
-  .work-item-step-5{
+.work-item-step-5 {
   background-image: url("./../images/five.webp");
 }
 
-  .work-item-step-6{
+.work-item-step-6 {
   background-image: url("./../images/six.webp");
 }
 
@@ -148,7 +148,7 @@ display: flex;
 .work-item-step-4 span,
 .work-item-step-3 span,
 .work-item-step-2 span,
-.work-item-step-1 span{
+.work-item-step-1 span {
   position: absolute;
   top: 70%;
   padding-left: 20%;
@@ -156,7 +156,7 @@ display: flex;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-font-size: calc(12px + 10 * (100vw / 1920));
+  font-size: calc(12px + 10 * (100vw / 1920));
   line-height: calc(18px + 1.635417vh);
   color: $Saffron;
 }
@@ -168,13 +168,13 @@ font-size: calc(12px + 10 * (100vw / 1920));
   padding: 2%;
 }
 
-ul.work-title{
+ul.work-title {
   @include relative;
 
   list-style-type: none;
 }
 
-.work-title h6{
+.work-title h6 {
   @include relative;
 
   font-family: Roboto, sans-serif;
@@ -188,10 +188,10 @@ ul.work-title{
   padding-bottom: 1%;
 }
 
-li.work-titlelist{
+li.work-titlelist {
   @include relative;
 
-font-family: OpenSans, sans-serif;
+  font-family: OpenSans, sans-serif;
   font-style: italic;
   font-weight: 200;
   font-size: calc(8px + 8 * (100vw / 1920));
@@ -203,13 +203,13 @@ font-family: OpenSans, sans-serif;
   padding-bottom: 4%;
 }
 
-.work-title-paragraf p{
+.work-title-paragraf p {
   font-family: OpenSans, sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    font-size: calc(8px + 8 * (100vw / 1920));
-    line-height: calc(10px + 1.635417vh);
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: $Mercury;
+  font-style: italic;
+  font-weight: 200;
+  font-size: calc(8px + 8 * (100vw / 1920));
+  line-height: calc(10px + 1.635417vh);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $Mercury;
 }
