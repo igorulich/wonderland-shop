@@ -17,6 +17,17 @@ section.gallery {
   text-align: center;
 }
 
+img.gallery-title-fon{
+    @include relative;
+    
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30px;
+      width: 45%;
+      left: 25%;
+}
+
 .gallery-content {
   @include relative;
 
