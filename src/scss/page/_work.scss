@@ -42,6 +42,14 @@ img.work-title-fon {
 
 }
 
+@media screen and (width<=768px){
+  .work {
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  }
+}
+
 @media screen and (width<=425px){
   .work {
   flex-flow: column nowrap;
@@ -58,6 +66,13 @@ img.work-title-fon {
   margin-top: 40px;
 }
 
+@media screen and (width<=768px){
+  .work-item:nth-child(2n) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+}
+
 @media screen and (width<=425px){
 .work-item:nth-child(2n) {
     margin-top: 40px;
@@ -68,11 +83,18 @@ img.work-title-fon {
 .work-item {
   @include relative;
 
+display: flex;
   width: 41%;
   min-height: 234px;
   height: 100%;
   box-shadow: 5px 5px 27px 13px rgb(0 0 0 / 99%);
   border: solid 1px black;
+}
+
+@media screen and (width<=768px){
+  .work-item {
+    width: 88%;
+  }
 }
 
 @media screen and (width<=425px){
@@ -139,11 +161,55 @@ font-size: calc(12px + 10 * (100vw / 1920));
   color: $Saffron;
 }
 
-
-
 .work-item-descr {
   @include relative;
 
   width: 65%;
   padding: 2%;
+}
+
+ul.work-title{
+  @include relative;
+
+  list-style-type: none;
+}
+
+.work-title h6{
+  @include relative;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(12px + 10 * (100vw / 1920));
+  line-height: calc(18px + 1.635417vh);
+  text-transform: uppercase;
+  color: $Saffron;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+li.work-titlelist{
+  @include relative;
+
+font-family: OpenSans, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: calc(8px + 8 * (100vw / 1920));
+  line-height: calc(10px + 1.035417vh);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $Mercury;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.work-title-paragraf p{
+  font-family: OpenSans, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: calc(8px + 8 * (100vw / 1920));
+    line-height: calc(10px + 1.635417vh);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $Mercury;
 }
