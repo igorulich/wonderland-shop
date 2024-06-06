@@ -1,0 +1,115 @@
+section.questions{
+    @include relative;
+
+    padding-bottom: 4%;
+}
+
+img.questions-title-fon{
+  @include relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 45%;
+  left: 25%;
+}
+
+.questions-title h2{
+  @include relative;
+  
+    font-family: segoescript, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(11px + 28 * (100vw / 1920));
+    line-height: calc(18px + 4.135417vh);
+    text-transform: uppercase;
+    color: $Saffron;
+    text-align: center;
+}
+
+.questions-content{
+  @include relative;
+
+  padding-bottom: 2%;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $Cod-Gray;
+  color:$Mercury;
+  cursor: pointer;
+  padding: 6px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+    border-bottom: solid 1px $Mercury;
+}
+
+.accordion.active{
+  border-bottom: none;
+}
+
+.active,
+.accordion:hover {
+  background-color:$Cod-Gray;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: $Cod-Gray;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: $Mercury;
+  border-bottom: solid 1px $Mercury;
+}
+
+.accordion::after {
+  content: '^';
+  font-size: calc(11px + 18 * (100vw / 1920));
+    line-height: calc(18px + 1.135417vh);
+color: $Mercury;
+font-weight: 400;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "^";
+transform: rotate(180deg);
+}
+
+button.accordion h6{
+  @include relative;
+
+  font-family: OpenSans, sans-serif;
+  font-style: italic;
+    font-weight: 200;
+    font-size: calc(8px + 8 * (100vw / 1920));
+    line-height: calc(10px + 1.035417vh);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $Mercury;
+    padding: 1% 0;
+}
+
+button.accordion.active h6{
+  color: $Marigold-Yellowt;
+}
+
+.panel p{
+  @include relative;
+
+  font-family: OpenSans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(10px + 6 * (100vw / 1920));
+    line-height: calc(14px + 1.135417vh);
+    color: $Mercury;
+    text-align: left;
+}
