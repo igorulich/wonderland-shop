@@ -187,18 +187,19 @@ span.navbar-toggler-icon::before {
   z-index: z('content');
 }
 
-.header-content-btn {
+.header-content-btn.button {
   @include relative;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
   z-index: z('content');
+  overflow: hidden;
 }
 
-.header-content-btn button {
-  width: 100%;
+.header-content-btn.button button {
   max-width: 280px;
+  padding: 0 3%;
   height: 45px;
   background: $Shiraz;
   box-shadow: 0 20px 50px -10px rgb(173 16 45 / 40%);
@@ -212,6 +213,7 @@ span.navbar-toggler-icon::before {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .header-content-paragraf p {

@@ -70,10 +70,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-  
     this.classList.toggle("active");
-
-  
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -83,3 +80,17 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+$('.button').click(function () {
+  $('.overlay').fadeIn();
+});
+
+$('.close-popup').click(function () {
+  $('.overlay').fadeOut();
+});
+
+$(document).mouseup(function (e) {
+  var popup = $('.popup');
+  if (e.target != popup[0] && popup.has(e.target).length === 0) {
+    $('.overlay').fadeOut();
+  }
+});
