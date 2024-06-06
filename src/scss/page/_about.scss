@@ -1,20 +1,20 @@
 section.about {
   @include relative;
 
-  padding-top: 14%;
+  padding-top: 4%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   section.about {
     padding-top: 14%;
   }
 }
 
-.about-content{
+.about-content {
   @include relative;
 }
 
-.about-content::after{
+.about-content::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -26,6 +26,14 @@ section.about {
   opacity: 0.6;
 }
 
+@media screen and (max-width: 425px){
+  .about-title h2 {
+    padding: 0 0 1%;
+    line-height: calc(18px + 1.135417vh);
+  }
+
+}
+
 .about-title h2 {
   font-family: segoescript, sans-serif;
   font-style: normal;
@@ -35,18 +43,18 @@ section.about {
   text-transform: uppercase;
   color: $Saffron;
   text-align: center;
-  padding: 14% 0 4%;
+  padding: 2% 0 4%;
 }
 
 img.about-title-fon {
   @include relative;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30px;
-    width: 45%;
-    left: 25%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 45%;
+  left: 25%;
 }
 
 .about-information {
@@ -56,7 +64,7 @@ img.about-title-fon {
   flex-direction: row;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .about-information {
     display: flex;
     flex-direction: column-reverse;
@@ -64,7 +72,7 @@ img.about-title-fon {
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .about-information {
     display: flex;
     flex-direction: column-reverse;
@@ -140,10 +148,10 @@ img.about-title-fon {
   padding: 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .about-images {
-  padding-bottom: 10%;
-  margin: 0 auto;
+    padding-bottom: 10%;
+    margin: 0 auto;
   }
 }
 
@@ -155,8 +163,8 @@ img.about-title-fon {
   background-size: cover;
 }
 
-@media screen and (max-width: 768px){
-  .about-images img{
+@media screen and (max-width: 768px) {
+  .about-images img {
     max-width: 500px;
   }
 }

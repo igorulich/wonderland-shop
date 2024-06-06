@@ -51,6 +51,17 @@ li.nav-item {
   }
 }
 
+@media screen and (max-width: 425px){
+  li.nav-item {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px $Shiraz;
+    border-radius: 17px;
+    margin: 0;
+  }
+}
+
 #navbarText>ul>li>a {
   font-family: OpenSans, sans-serif;
   font-style: normal;
@@ -234,5 +245,11 @@ img.header-poster {
 @media screen and (max-width: 992px){
   img.header-poster{
     height: 620px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  img.header-poster{
+    height: 570px;
   }
 }
