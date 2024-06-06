@@ -54,13 +54,13 @@ img.assortiment-title-fon{
  
 }
 
-@media screen and (width<=992px){
+@media screen and (max-width: 992px){
 .assortiment-grid{
   padding-bottom: 9%;
 }
 }
 
-@media screen and (width<=425px){
+@media screen and (max-width: 425px){
 .assortiment-grid{
   padding-bottom: 24%;
 }
@@ -142,7 +142,7 @@ line-height: calc(11px + 1.135417vh);
   text-align: center;
 }
 
-@media screen and (width<=425px) {
+@media screen and (max-width: 425px){
 .assortiment-content-linck p{
   line-height: calc(11px + 0.135417vh);
 }

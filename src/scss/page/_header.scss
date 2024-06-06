@@ -21,7 +21,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0.navbar-content {
   justify-content: space-between;
 }
 
-@media screen and (width<=992px) {
+@media screen and (max-width: 992px){
   ul.navbar-nav.me-auto.mb-2.mb-lg-0.navbar-content {
     width: 100%;
     display: flex;
@@ -40,7 +40,7 @@ li.nav-item {
  
 }
 
-@media screen and (width<=992px) {
+@media screen and (max-width: 992px){
   li.nav-item {
     width: 25%;
     display: flex;
@@ -70,7 +70,7 @@ li.nav-item {
 border-top: solid 3px $Saffron;
 }
 
-@media screen and (width<=992px) {
+@media screen and (max-width: 992px){
   #navbarText>ul>li>a {
     font-family: OpenSans, sans-serif;
     font-style: normal;
@@ -131,7 +131,7 @@ span.navbar-toggler-icon::before {
   z-index: z('content');
 }
 
-@media screen and (width<=992px){
+@media screen and (max-width: 992px){
   .header-content-soc-icons{
     top: 45%;
   }
@@ -231,7 +231,7 @@ img.header-poster {
   z-index: z('poster');
 }
 
-@media screen and (width<=992px){
+@media screen and (max-width: 992px){
   img.header-poster{
     height: 620px;
   }

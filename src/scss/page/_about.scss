@@ -1,10 +1,10 @@
 section.about {
   @include relative;
 
-  padding-top: 12%;
+  padding-top: 14%;
 }
 
-@media screen and (width<=768px) {
+@media screen and (max-width: 768px){
   section.about {
     padding-top: 14%;
   }
@@ -35,7 +35,7 @@ section.about {
   text-transform: uppercase;
   color: $Saffron;
   text-align: center;
-  padding-bottom: 6%;
+  padding: 14% 0 4%;
 }
 
 img.about-title-fon {
@@ -56,8 +56,17 @@ img.about-title-fon {
   flex-direction: row;
 }
 
-@media screen and (width<=768px) {
+@media screen and (max-width: 768px){
   .about-information {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+}
+
+@media screen and (max-width: 425px){
+  .about-information {
+    display: flex;
     flex-direction: column-reverse;
 
   }
@@ -73,13 +82,13 @@ img.about-title-fon {
   align-items: center;
 }
 
-@media screen and (width<=768px) {
+@media screen and (max-width: 768px) {
   .about-descr {
     width: 100%;
   }
 }
 
-.about-descr h3 {
+.about-descr-title h3 {
   @include relative;
 
   font-family: OpenSans, sans-serif;
@@ -105,7 +114,7 @@ img.about-title-fon {
   background-position: 44.58715596330275% 43.177570093457945%;
 }
 
-@media screen and (width<=768px) {
+@media screen and (max-width: 768px) {
   .about-descr::after {
     top: -5%;
     left: -5%;
@@ -131,9 +140,9 @@ img.about-title-fon {
   padding: 0;
 }
 
-@media screen and (width<=768px) {
+@media screen and (max-width: 768px){
   .about-images {
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   margin: 0 auto;
   }
 }
@@ -146,7 +155,7 @@ img.about-title-fon {
   background-size: cover;
 }
 
-@media screen and (width<=768px){
+@media screen and (max-width: 768px){
   .about-images img{
     max-width: 500px;
   }
