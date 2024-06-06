@@ -67,7 +67,7 @@ li.nav-item {
 }
 
 #navbarText>ul>li>a:hover{
-border-top: solid 3px $Saffron;
+color: $Saffron;
 }
 
 @media screen and (max-width: 992px){
@@ -75,11 +75,11 @@ border-top: solid 3px $Saffron;
     font-family: OpenSans, sans-serif;
     font-style: normal;
     font-weight: 200;
-    font-size: calc(10px + 6 * (100vw / 1920));
+    font-size: calc(8px + 6 * (100vw / 1920));
     line-height: calc(11px + 0.135417vh);
     color: $Mercury;
     white-space: nowrap;
-    text-transform: capitalize;
+    text-transform: uppercase;
     display: flex;
     flex-wrap: wrap;
   }

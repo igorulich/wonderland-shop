@@ -88,7 +88,7 @@ button.accordion h6{
   @include relative;
 
   font-family: OpenSans, sans-serif;
-  font-style: italic;
+  font-style: normal;
     font-weight: 200;
     font-size: calc(8px + 8 * (100vw / 1920));
     line-height: calc(10px + 1.035417vh);
@@ -107,9 +107,10 @@ button.accordion.active h6{
 
   font-family: OpenSans, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: calc(10px + 6 * (100vw / 1920));
     line-height: calc(14px + 1.135417vh);
     color: $Mercury;
     text-align: left;
+    
 }
