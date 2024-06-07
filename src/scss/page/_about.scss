@@ -10,6 +10,7 @@ section.about {
     padding-top: 4%;
   }
 }
+
 @media (max-width: 1199.98px){
   section.about {
     padding-top: 10%;
@@ -33,6 +34,7 @@ section.about {
     padding-top: 12%;
   }
 }
+
 .about-content {
   @include relative;
 }

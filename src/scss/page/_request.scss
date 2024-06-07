@@ -28,8 +28,10 @@ section.request {
       width: 100%;
     }
 }
+
 img.request-content-poster {
   @include relative;
+
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,6 +53,7 @@ img.request-content-poster {
     
     }
 }
+
 .request-content-forms-title h2 {
   @include relative;
 
@@ -70,6 +73,7 @@ img.request-content-poster {
     padding-bottom: 6%;
   }
 }
+
 form.form-content {
   @include relative;
 
