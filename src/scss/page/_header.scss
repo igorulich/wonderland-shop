@@ -21,7 +21,7 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0.navbar-content {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 991.98px){
   ul.navbar-nav.me-auto.mb-2.mb-lg-0.navbar-content {
     width: 100%;
     display: flex;
@@ -40,9 +40,9 @@ li.nav-item {
  
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 991.98px){
   li.nav-item {
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px $Shiraz;
@@ -50,15 +50,25 @@ li.nav-item {
     margin: 3px;
   }
 }
-
-@media screen and (max-width: 425px){
+@media (max-width: 767.98px){
   li.nav-item {
-    width: 33%;
+    width: 25%;
     display: flex;
     flex-wrap: wrap;
     border: solid 1px $Shiraz;
     border-radius: 17px;
-    margin: 0;
+  margin: 2px 0;
+  }
+}
+
+@media (max-width: 575.98px){
+  li.nav-item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px $Shiraz;
+    border-radius: 17px;
+    margin: 2px 0;
   }
 }
 
@@ -81,7 +91,7 @@ li.nav-item {
 color: $Saffron;
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 991.98px){
   #navbarText>ul>li>a {
     font-family: OpenSans, sans-serif;
     font-style: normal;
@@ -142,7 +152,7 @@ span.navbar-toggler-icon::before {
   z-index: z('content');
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 991.98px){
   .header-content-soc-icons{
     top: 45%;
   }
@@ -226,7 +236,7 @@ span.navbar-toggler-icon::before {
   line-height: calc(18px + 1.635417vh);
   letter-spacing: 0.01em;
   color: $Mercury;
-  padding: 12% 0% 0% 45%;
+  padding: 8% 0% 0% 45%;
   z-index: z('content');
 }
 
@@ -236,7 +246,7 @@ img.header-poster {
   left: 0;
   right: 0;
   max-width: 1920px;
-  height: 690px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,14 +254,28 @@ img.header-poster {
   z-index: z('poster');
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 1399.98px){
   img.header-poster{
-    height: 620px;
+    height: 580px;
   }
 }
-
-@media screen and (max-width: 425px){
+@media (max-width: 1199.98px){
   img.header-poster{
-    height: 570px;
+    height: 560px;
+  }
+}
+@media (max-width: 991.98px){
+  img.header-poster{
+    height: 540px;
+  }
+}
+@media (max-width: 767.98px){
+  img.header-poster{
+    height:520px;
+  }
+}
+@media (max-width: 575.98px){
+  img.header-poster{
+    height: 500px;
   }
 }

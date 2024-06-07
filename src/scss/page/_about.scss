@@ -1,15 +1,38 @@
 section.about {
   @include relative;
 
-  padding-top: 4%;
+  padding-top: 3%;
 }
 
-@media screen and (max-width: 768px) {
+
+@media (max-width: 1399.98px){
   section.about {
-    padding-top: 14%;
+    padding-top: 4%;
+  }
+}
+@media (max-width: 1199.98px){
+  section.about {
+    padding-top: 6%;
   }
 }
 
+@media (max-width: 991.98px){
+  section.about {
+    padding-top: 8%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section.about {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 575.98px){
+  section.about {
+    padding-top: 12%;
+  }
+}
 .about-content {
   @include relative;
 }
