@@ -1,0 +1,41 @@
+section.contact{
+  @include relative;
+
+  padding:0 0 4%;
+}
+
+.contact-title h2{
+    @include relative;
+    
+      width: 100%;
+      font-family: segoescript, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: calc(11px + 28 * (100vw / 1920));
+      line-height: calc(18px + 4.135417vh);
+      text-transform: uppercase;
+      color: $Saffron;
+      text-align: center;
+      padding-bottom: 6%;
+}
+
+.contact-content{
+  @include relative;
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-content-inform{
+  @include relative;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content-cart{
+  @include relative;
+  
+  display: flex;
+  flex-direction: column;
+}

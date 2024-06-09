@@ -38,9 +38,9 @@ $(function () {
 
 $(function () {
   $('.gallery').slick({
-    lazyLoad: 'ondemand',
+    centerMode: true,
+    centerPadding: '60px',
     slidesToShow: 3,
-    slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev gallery-prev"></button>',
     nextArrow: '<button type="button" class="slick-next gallery-next"></button>',
     responsive: [
