@@ -17,15 +17,15 @@ section.gallery {
   text-align: center;
 }
 
-img.gallery-title-fon{
-    @include relative;
-    
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 30px;
-      width: 45%;
-      left: 25%;
+img.gallery-title-fon {
+  @include relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 45%;
+  left: 25%;
 }
 
 .gallery-content {
@@ -39,9 +39,9 @@ img.gallery-title-fon{
   @include relative;
 
   width: 100%;
-   display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slick-prev.gallery-prev.slick-arrow {
@@ -80,7 +80,7 @@ img.gallery-title-fon{
   @include relative;
 
   max-width: 260px;
-    min-height: 320px;
+  min-height: 320px;
 
 }
 
@@ -93,7 +93,8 @@ img.images-gallery {
   border-radius: 20px;
   padding: 1% 3%;
 }
-img.images-gallery:hover{
+
+.images-gallery:hover {
   transform: scale(1.2);
   z-index: z('hover');
 }

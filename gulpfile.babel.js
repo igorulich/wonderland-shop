@@ -39,7 +39,7 @@ const build = series(
   parallel(Styles),
   parallel(Scripts),
   parallel(Html),
-  parallel(Browsersync)
+  parallel(Browsersync),
 );
 
 export default build;

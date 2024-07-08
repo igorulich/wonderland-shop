@@ -64,6 +64,7 @@ img.work-title-fon {
 
 .work-item:nth-child(2n) {
   margin-top: 40px;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 767.98px){
@@ -84,6 +85,7 @@ img.work-title-fon {
   @include relative;
 
   display: flex;
+  flex-direction: row;
   width: 41%;
   min-height: 234px;
   height: 100%;

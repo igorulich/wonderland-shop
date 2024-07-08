@@ -1,9 +1,11 @@
 {
   "name": "template-gulp",
   "version": "1.0.0",
-  "description": "main new version project gulp of update 06.05.2024.",
+  "homepage": " https://igorulich.github.io/wonderland-shop/",
+  "description": "Створення інтернет-магазину кондитерської включає написання коду для створення та налаштування сайту, додавання функціональності, роботи з базою даних та інших технічних аспектів.",
   "main": "index.html",
   "scripts": {
+    "deploy": "gh-pages -d assets",
     "clean": "rimraf maps",
     "gulp": "gulp"
   },
@@ -39,6 +41,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.1.1",
     "gulp-avif": "^1.1.1",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^2.6.5",
