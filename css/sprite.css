@@ -1,0 +1,117 @@
+.arrow-left {
+    background: url("sprite.svg") 0 0 no-repeat;
+}
+
+.arrow-left-dims {
+    width: 40px;
+    height: 40px;
+}
+
+.arrow-right {
+    background: url("sprite.svg") 7.407407407407407% 8.064516129032258% no-repeat;
+}
+
+.arrow-right-dims {
+    width: 40px;
+    height: 40px;
+}
+
+.facebook {
+    background: url("sprite.svg") 14.625228519195613% 15.904572564612327% no-repeat;
+}
+
+.facebook-dims {
+    width: 33px;
+    height: 33px;
+}
+
+.helo {
+    background: url("sprite.svg") 23.10838445807771% 23.014256619144604% no-repeat;
+}
+
+.helo-dims {
+    width: 91px;
+    height: 45px;
+}
+
+.instagram {
+    background: url("sprite.svg") 37.29433272394881% 31.411530815109344% no-repeat;
+}
+
+.instagram-dims {
+    width: 33px;
+    height: 33px;
+}
+
+.location {
+    background: url("sprite.svg") 42.7797833935018% 37.450980392156865% no-repeat;
+}
+
+.location-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.logo {
+    background: url("sprite.svg") 53.78323108384458% 49.31818181818182% no-repeat;
+}
+
+.logo-dims {
+    width: 91px;
+    height: 96px;
+}
+
+.mail {
+    background: url("sprite.svg") 63.898916967509024% 61.372549019607845% no-repeat;
+}
+
+.mail-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.phone {
+    background: url("sprite.svg") 68.59205776173285% 66.47058823529412% no-repeat;
+}
+
+.phone-dims {
+    width: 26px;
+    height: 26px;
+}
+
+.reviews-icons-1 {
+    background: url("sprite.svg") 76.17260787992495% 74.48979591836735% no-repeat;
+}
+
+.reviews-icons-1-dims {
+    width: 47px;
+    height: 46px;
+}
+
+.reviews-icons-2 {
+    background: url("sprite.svg") 84.9906191369606% 83.87755102040816% no-repeat;
+}
+
+.reviews-icons-2-dims {
+    width: 47px;
+    height: 46px;
+}
+
+.reviews-icons-3 {
+    background: url("sprite.svg") 93.80863039399625% 93.26530612244898% no-repeat;
+}
+
+.reviews-icons-3-dims {
+    width: 47px;
+    height: 46px;
+}
+
+.whatsapp {
+    background: url("sprite.svg") 100% 100% no-repeat;
+}
+
+.whatsapp-dims {
+    width: 33px;
+    height: 33px;
+}
+
