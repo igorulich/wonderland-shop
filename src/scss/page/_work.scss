@@ -176,7 +176,7 @@ ul.work-title {
   list-style-type: none;
 }
 
-.work-title {
+.work-title p{
   @include relative;
 
   font-family: Roboto, sans-serif;
