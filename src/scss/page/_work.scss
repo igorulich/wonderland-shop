@@ -176,21 +176,21 @@ ul.work-title {
   list-style-type: none;
 }
 
-.work-title p{
+.work-title li:nth-child(1){
   @include relative;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: calc(12px + 10 * (100vw / 1920));
-  line-height: calc(18px + 1.635417vh);
+  line-height: calc(18px + 3.635417vh);
   text-transform: uppercase;
   color: $Saffron;
   text-align: center;
   padding-bottom: 1%;
 }
 
-li.work-titlelist {
+.work-title li {
   @include relative;
 
   font-family: OpenSans, sans-serif;
